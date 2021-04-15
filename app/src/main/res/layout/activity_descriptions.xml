@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".DescriptionsActivity">
+
+    <ImageView
+        android:id="@+id/foodImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="44dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/food1" />
+
+    <TextView
+        android:id="@+id/foodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="foodname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/foodImage" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toStartOf="@id/imageButton4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/foodName"
+        app:srcCompat="@drawable/ic_baseline_access_time_24" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/imageButton4"
+        app:layout_constraintTop_toTopOf="@id/imageButton4"
+        app:srcCompat="@drawable/ic_baseline_accessibility_24" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton2"
+        app:layout_constraintEnd_toStartOf="@id/imageButton3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/imageButton2"
+        app:layout_constraintTop_toTopOf="@id/imageButton2"
+        app:srcCompat="@drawable/ic_baseline_fastfood_24" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:text="COOK: "
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButton2" />
+
+    <TextView
+        android:id="@+id/foodTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBaseline_toBaselineOf="@id/textView2"
+        app:layout_constraintEnd_toEndOf="@id/imageButton2"
+        app:layout_constraintStart_toStartOf="@id/imageButton2" />
+
+    <TextView
+        android:id="@+id/kcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBaseline_toBaselineOf="@id/foodTime"
+        app:layout_constraintEnd_toEndOf="@id/imageButton4"
+        app:layout_constraintStart_toStartOf="@id/imageButton4" />
+
+    <TextView
+        android:id="@+id/servers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="servers"
+        app:layout_constraintBaseline_toBaselineOf="@id/kcal"
+        app:layout_constraintEnd_toEndOf="@id/imageButton3"
+        app:layout_constraintStart_toStartOf="@id/imageButton3" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="1dp"
+        android:text="Method"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@id/kcal"
+        app:layout_constraintTop_toBottomOf="@id/kcal" />
+
+    <TextView
+        android:id="@+id/foodDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/textView6"
+        app:layout_constraintStart_toStartOf="@id/textView6"
+        app:layout_constraintTop_toBottomOf="@id/textView6"
+        app:layout_constraintVertical_bias="0.06999999" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
